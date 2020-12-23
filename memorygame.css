@@ -1,0 +1,127 @@
+body {
+  display: grid;
+  grid-template: 1fr 3fr 1fr/ 1fr 2fr 1fr;
+  height: 100vh;
+  margin: 0px;
+  width: 100%;
+  background-color: #eeeeee;
+  font-family: "Roboto", sans-serif;
+}
+
+#header {
+  grid-area: 1/1/2/4;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00a8a8;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-family: "Bungee", cursive;
+  color: #01444a;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+h1:hover {
+  color: #f0bc4f;
+}
+
+#startButton {
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  background-color: #f0bc4f;
+  border-radius: 6px;
+  border: 1px solid #99d2d9;
+  cursor: pointer;
+  color: #01444a;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #5b6178;
+}
+
+#startButton:hover {
+  background-color: #99d2d9;
+  border-color: #00a8a8;
+}
+
+#bestScore {
+  color: #01444a;
+  font-size: 1.5rem;
+}
+
+#game {
+  grid-area: 2/2/3/3;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  grid-gap: 20px 10px;
+  justify-items: center;
+}
+
+#leftside {
+  grid-area: 2/1/3/2;
+  justify-self: center;
+  align-self: center;
+  font-size: 3rem;
+  font-family: "Bungee", cursive;
+  color: #ff8f49;
+}
+
+#rightside {
+  grid-area: 2/3/3/4;
+  justify-self: center;
+  align-self: center;
+  font-size: 3rem;
+  font-family: "Bungee", cursive;
+  color: #ff8f49;
+}
+
+#game div {
+  border: 1px solid black;
+  width: 60%;
+  padding-bottom: 60%;
+  display: inline-block;
+}
+
+.pic1 {
+  background-image: url("https://media.giphy.com/media/SggILpMXO7Xt6/giphy.gif");
+  background-size: cover;
+}
+
+.pic2 {
+  background-image: url("https://media.giphy.com/media/IpeYSEZshTefe/giphy.gif");
+  background-size: cover;
+}
+.pic3 {
+  background-image: url("https://media.giphy.com/media/Zx1ZEctOOvxK5VCwwE/giphy.gif");
+  background-size: cover;
+}
+.pic4 {
+  background-image: url("https://media.giphy.com/media/1APe3NeGZ9wGmRbFgt/giphy.gif");
+  background-size: cover;
+}
+.pic5 {
+  background-image: url("https://media.giphy.com/media/3o7WIIThzkPpEqHxD2/giphy.gif");
+  background-size: cover;
+}
+.pic6 {
+  background-image: url("https://media.giphy.com/media/A49qRTnZhaZDW/giphy.gif");
+  background-size: cover;
+}
+.pic7 {
+  background-image: url("https://media.giphy.com/media/26ufmyrjQ4BmKN7xe/giphy.gif");
+  background-size: cover;
+}
+.pic8 {
+  background-image: url("https://media.giphy.com/media/YSB6SGgVKmfGpPfGyl/giphy.gif");
+  background-size: cover;
+}
+
+.hidden {
+  background: white;
+}
